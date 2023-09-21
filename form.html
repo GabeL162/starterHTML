@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+<form method="GET" action="" name="form">
+    <!-- input tags allow all kinds of inputs
+        label tags marry the text to the form field
+        important attributes: name, id, type
+
+        types: test, radio
+        -->
+    <label for="fName">First name:</label>
+    <input type="text" name="fName" id="fName" value="Enter First Name"/><br />
+
+    <!-- Radio buttons must have sa    me name to represent same selection
+    -->
+    Are you alive?
+    <label>Yes</label><input type="radio" name="alive" id="yes" value="yes">
+    <label>No</label><input type="radio" name="alive" id="no" value="no"> <br />
+
+    <!-- Checkboxes must have different names and id's. Unlike radio buttons multiple can be selected
+    -->
+    check all of the following tha apply<br />
+    <input type="checkbox" name="webDesign" id="webDesign"><label> Web Design</label><br />
+
+    <input type="checkbox" name="csp" id="csp"><label> Computer Science Principles</label><br />
+
+    <input type="checkbox" name="cybersecurity" id="cybersecurity"><label> Cybersecurity </label><br />
+
+   <!-- text area -->
+    <textarea name="comments" rows="20" cols="50"> THIS IS WHERE YOU PUT COMMENTS ON YOUR FORM</textarea><br />
+
+    <select name="numbers" id="numbers">
+        <option value="One" >One</option>
+        <option value="Two" >Two</option>
+        <option value="Three" >Three</option>
+        <option value="Four" >Four</option>
+    </select> <br />
+    <!-- submit button-->
+    <input type="submit" value="Take my data!" />
+
+</form>
+
+</body>
+</html>
